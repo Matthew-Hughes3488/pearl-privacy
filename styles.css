@@ -1,0 +1,26 @@
+:root { color-scheme: light; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #38222b; background: #f4e3e4; font-size: 17px; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.75; background: #f4e3e4; }
+header, main, footer { width: min(100% - 3rem, 48rem); margin-inline: auto; }
+header { display: flex; justify-content: space-between; align-items: center; padding-block: 1.75rem; border-bottom: 1px solid #38222b26; }
+a { color: #38222b; text-decoration-color: #38222b80; text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { color: #6f5058; text-decoration-color: currentColor; }
+a:focus-visible { outline: 3px solid #a8721f; outline-offset: 5px; border-radius: 2px; }
+.wordmark { color: #38222b; font-size: 2rem; font-weight: 800; text-decoration: none; letter-spacing: -.045em; line-height: 1; }
+.wordmark span { color: #a8721f; font-size: 1.2rem; vertical-align: super; margin-left: .12rem; }
+main { padding-block: 3rem; }
+.eyebrow { color: #6f5058; font-size: .9rem; font-weight: 700; margin: 0 0 .5rem; }
+h1 { font-size: clamp(2.25rem, 7vw, 3.3rem); line-height: 1.1; letter-spacing: -.045em; margin: 0; }
+.updated { color: #7a5b64; margin-block: 1rem 1.75rem; font-size: .9rem; }
+.notice { padding: 1.25rem; border-left: 4px solid #a8721f; background: #fff9f8; border-radius: 0 .65rem .65rem 0; font-size: .95rem; }
+section { margin-top: 2.5rem; scroll-margin-top: 1.5rem; }
+h2 { font-size: 1.4rem; line-height: 1.35; letter-spacing: -.025em; margin-bottom: .8rem; }
+p { margin-block: .8rem; }
+ul { padding-left: 1.35rem; }
+li { margin-block: .85rem; }
+dt { font-weight: 700; margin-top: 1.5rem; }
+dd { margin: .3rem 0 0; }
+footer { padding-block: 1.5rem 2.5rem; border-top: 1px solid #38222b26; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: .9rem; color: #6f5058; }
+footer span { font-weight: 700; color: #38222b; }
+@media (max-width: 480px) { header, main, footer { width: calc(100% - 2rem); } main { padding-top: 2rem; } }
+@media print { :root, body { background: white; color: black; } header, main, footer { width: 100%; } a { color: inherit; } .notice { background: none; } }
