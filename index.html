@@ -17,17 +17,17 @@
     <section aria-labelledby="summary">
       <h2 id="summary">The short version</h2>
       <p>Pearl is an iPhone app for people going no contact after a breakup. It counts your days, with a companion character called Pearl alongside you.</p>
-      <p>Pearl works without an account or sign-in. What you enter in the app stays on your iPhone. We collect anonymous analytics to see how the app is used, and the app talks to two services to download Pearl's daily lines and check your subscription.</p>
+      <p>Pearl works without an account or sign-in. What you enter in the app stays on your iPhone, apart from where you heard about Pearl, which goes into the anonymous analytics. We collect anonymous analytics to see how the app is used, and the app talks to two services to download Pearl's daily lines and check your subscription.</p>
       <p>Pearl is operated by <strong>Matthew Hughes</strong>, an individual developer in the UK, who is responsible for its handling of your personal information. You can contact him at <a href="mailto:12hughesm@gmail.com">12hughesm@gmail.com</a>.</p>
     </section>
 
     <section aria-labelledby="information">
       <h2 id="information">Information the app handles</h2>
       <ul>
-        <li><strong>What you enter:</strong> your name if you choose to give one, your onboarding answers, your last-contact date and the history of earlier ones, your reasons, the unsent messages you write in the app, your check-in time and your notification choice. These are saved in a file on your iPhone, in a storage area shared only with Pearl's own widget. They stay on your device.</li>
+        <li><strong>What you enter:</strong> your name if you choose to give one, your onboarding answers, your last-contact date and the history of earlier ones, your reasons, the unsent messages you write in the app, your check-in time and your notification choice. These are saved in a file on your iPhone, in a storage area shared only with Pearl's own widget. They stay on your device, except your answer to where you heard about Pearl, which is also sent with the analytics below.</li>
         <li><strong>Backups:</strong> that file is part of your iPhone's iCloud or computer backups, depending on your own Apple settings.</li>
         <li><strong>Notifications:</strong> check-in reminders are scheduled by the app and delivered on your iPhone.</li>
-        <li><strong>Anonymous analytics:</strong> a random ID created for this install of Pearl, events from the app, your current day count, and device and app details. The <a href="#analytics">analytics section</a> below has the detail.</li>
+        <li><strong>Anonymous analytics:</strong> a random ID created for this install of Pearl, events from the app, your current day count, where you heard about Pearl, and device and app details. The <a href="#analytics">analytics section</a> below has the detail.</li>
         <li><strong>Daily lines request:</strong> the app asks our server for Pearl's current lines in your device's language. The request carries no personal data. Like any web request, it reveals your device's IP address to the server.</li>
         <li><strong>Subscription information:</strong> an anonymous app user ID, plus your Apple purchase receipt and subscription status. Apple processes App Store payments, and Pearl never sees your payment details.</li>
         <li><strong>Support information:</strong> anything you choose to include when you email us.</li>
@@ -38,7 +38,7 @@
       <h2 id="analytics">Analytics</h2>
       <p>Pearl sends an event when you reach each onboarding step and when you finish onboarding. It also sends an event when the app is installed or updated, opened, or moved to the background. Each event carries your current day count and the random ID for this install.</p>
       <p>PostHog's software adds device and app details to each event, such as the iPhone model, iOS version, app version, language and time zone. Like any web request, sending events reveals your device's IP address to PostHog.</p>
-      <p>Beyond those details, events hold only onboarding step names and numbers. Your name, your answers and anything you write stay on your iPhone. Session replay and automatic capture of taps and screens are switched off.</p>
+      <p>Beyond those details, events hold only onboarding step names and numbers, and your answer to where you heard about Pearl (or that you skipped it). If you choose an answer, PostHog also keeps it against the random ID, so it stays attached to later events from this install. Your name, your other answers and anything you write stay on your iPhone. Session replay and automatic capture of taps and screens are switched off.</p>
       <p>Analytics is always on in the App Store version of Pearl. <strong>Delete everything</strong> in Settings resets the random ID, so activity after that starts fresh and can't be linked to what came before.</p>
       <p>We use analytics only to understand and improve Pearl. We don't use it for advertising or sell it. Pearl doesn't track you across other companies' apps or websites.</p>
     </section>
@@ -66,8 +66,8 @@
 
     <section aria-labelledby="retention">
       <h2 id="retention">Storage and deletion</h2>
-      <p>What you enter stays on your iPhone until you delete it. In Settings, <strong>Export everything</strong> saves a copy as a file you can keep. <strong>Delete everything</strong> erases it from the app and resets the analytics ID. Deleting the app also removes its data from your iPhone. Earlier iCloud or computer backups keep their copy until your backup settings replace them.</p>
-      <p>Analytics events already sent stay with PostHog, linked only to the random ID. Contact us if you have a question about them.</p>
+      <p>Apart from that one answer, what you enter stays on your iPhone until you delete it. In Settings, <strong>Export everything</strong> saves a copy as a file you can keep. <strong>Delete everything</strong> erases it from the app and resets the analytics ID. Deleting the app also removes its data from your iPhone. Earlier iCloud or computer backups keep their copy until your backup settings replace them.</p>
+      <p>Analytics events already sent, and the answer kept against the old random ID, stay with PostHog, linked only to that ID. Contact us if you have a question about them.</p>
       <p><strong>Deleting your data or the app doesn't cancel an App Store subscription.</strong> Manage or cancel it in your Apple account's subscription settings.</p>
     </section>
 
