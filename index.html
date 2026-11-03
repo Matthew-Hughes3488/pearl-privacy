@@ -28,7 +28,7 @@
         <li><strong>Backups:</strong> that file is part of your iPhone's iCloud or computer backups, depending on your own Apple settings.</li>
         <li><strong>Notifications:</strong> check-in reminders and a morning quest notification at 10:00 are scheduled by the app and delivered on your iPhone.</li>
         <li><strong>Anonymous analytics:</strong> a random ID created for this install of Pearl, events from the app, your current day count, where you heard about Pearl, and device and app details. The <a href="#analytics">analytics section</a> below has the detail.</li>
-        <li><strong>Advert measurement:</strong> events that tell TikTok when Pearl is installed or opened, a free trial starts, or you subscribe or buy Pearl for life (with its price and currency), and, if you allow tracking, your device's advertising identifier. The <a href="#analytics">analytics section</a> below has the detail.</li>
+        <li><strong>Advert measurement, only if you allow tracking:</strong> events that tell TikTok when Pearl is installed or opened, a free trial starts, or you subscribe or buy Pearl for life (with its price and currency), with your device's advertising identifier. The <a href="#analytics">analytics section</a> below has the detail.</li>
         <li><strong>Daily lines and quests request:</strong> the app asks our server for Pearl's current lines, daily quests and replies in your device's language. The request carries no personal data. Like any web request, it reveals your device's IP address to the server.</li>
         <li><strong>Subscription information:</strong> an anonymous app user ID, plus your Apple purchase receipt and subscription status. Apple processes App Store payments, and Pearl never sees your payment details.</li>
         <li><strong>Support information:</strong> anything you choose to include when you email us.</li>
@@ -42,8 +42,8 @@
       <p>Beyond those details, events hold only onboarding step names and numbers, and your answer to where you heard about Pearl (or that you skipped it). If you choose an answer, PostHog also keeps it against the random ID, so it stays attached to later events from this install. Your name, your other answers and anything you write stay on your iPhone. Session replay and automatic capture of taps and screens are switched off.</p>
       <p>Analytics is always on in the App Store version of Pearl. <strong>Delete everything</strong> in Settings resets the random ID, so activity after that starts fresh and can't be linked to what came before.</p>
       <p>We use PostHog analytics only to understand and improve Pearl. We don't sell it.</p>
-      <p>Separately, Pearl measures whether its TikTok adverts lead to installs and purchases. The TikTok Business SDK in the app sends TikTok an event when Pearl is installed, when it's opened, when a free trial starts, when you subscribe, and when you buy Pearl for life, with its price and currency. Like any web request, sending these reveals your device's IP address to TikTok.</p>
-      <p>After you start a free trial or buy, Pearl shows Apple's tracking prompt once. If you allow tracking, TikTok also receives your device's advertising identifier, which can link these events to your activity in other companies' apps and websites. If you don't, the events are sent without it.</p>
+      <p>Separately, Pearl measures whether its TikTok adverts lead to installs and purchases. If you allow tracking, the TikTok Business SDK in the app sends TikTok an event when Pearl is installed, when it's opened, when a free trial starts, when you subscribe, and when you buy Pearl for life, with its price and currency. Like any web request, sending these reveals your device's IP address to TikTok.</p>
+      <p>After you start a free trial or buy, Pearl shows Apple's tracking prompt once. If you allow tracking, TikTok also receives your device's advertising identifier, which can link these events to your activity in other companies' apps and websites. If you don't, nothing is sent to TikTok. You can change your answer at any time in iPhone Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
       <p>Pearl also uses Apple's SKAdNetwork install reports (installed, then trial started, then paid). Apple sends these to TikTok without identifying you.</p>
       <p><strong>Delete everything</strong> in Settings resets the TikTok identity as well.</p>
     </section>
@@ -51,7 +51,7 @@
     <section aria-labelledby="purposes">
       <h2 id="purposes">Why the information is used</h2>
       <p>We use this information to show Pearl's daily lines and quests, send the check-ins and morning quest notifications you ask for, check your subscription, understand how people use the app, measure whether our TikTok adverts work and answer your emails.</p>
-      <p>The legal basis depends on the purpose. Fetching lines and quests and checking your subscription are part of providing the service you've asked for. Anonymous analytics relies on our legitimate interest in understanding and improving Pearl, which we weigh against your rights. Advert measurement relies on our legitimate interest in knowing whether our adverts work, and, for the advertising identifier, on your permission through Apple's tracking prompt.</p>
+      <p>The legal basis depends on the purpose. Fetching lines and quests and checking your subscription are part of providing the service you've asked for. Anonymous analytics relies on our legitimate interest in understanding and improving Pearl, which we weigh against your rights. Advert measurement relies on your permission through Apple's tracking prompt.</p>
     </section>
 
     <section aria-labelledby="providers">
@@ -64,7 +64,7 @@
         <dt>RevenueCat: subscriptions</dt>
         <dd>Receives an anonymous app user ID and your Apple purchase receipt and status, so the app can check whether you have access. RevenueCat may also pass purchase events to PostHog against the same anonymous ID. <a href="https://www.revenuecat.com/privacy/">RevenueCat privacy policy</a>.</dd>
         <dt>TikTok: advert measurement</dt>
-        <dd>Receives the events and, if you allow tracking, the advertising identifier described above, so we can see whether our TikTok adverts lead to installs and purchases. <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok privacy policy</a>.</dd>
+        <dd>Receives, only if you allow tracking, the events and the advertising identifier described above, so we can see whether our TikTok adverts lead to installs and purchases. <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok privacy policy</a>.</dd>
         <dt>Apple: purchases and backups</dt>
         <dd>Processes App Store payments and subscriptions, and holds your iCloud backups if you use them. <a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a>.</dd>
       </dl>
